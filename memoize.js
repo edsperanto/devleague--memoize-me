@@ -1,17 +1,32 @@
 window.memoize = (function() {
 
-	var cache = {};
+	var cache = {
+		id: {},
+		query: {}
+	};
 
-	function getTag(tag) {
-
+	function getQuery(query) {
+		let memory = cache.query[query];
+		if(!!memory) {
+			return memory;
+		} else {
+			memory = document.querySelector(query);
+			return memory;
+		}
 	}
 
 	function getId(id) {
-
+		let memory = cache.id[id];
+		if(memory) {
+			return memory;
+		} else {
+			memory = document.getElementById(id);
+			return memory;
+		}
 	}
 
 	return {
-		tag: getTag,
+		query: getQuery,
 		id: getId
 	}
 
