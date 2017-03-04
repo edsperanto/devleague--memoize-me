@@ -1,12 +1,14 @@
 ##How to use
 
-Put this in your header:
+1. Download memoize.js into your project folder
+
+2. Put this in your header:
 
 ```
 <script type="text/javascript" src="/path/to/memoize.js"></script>
 ```
 
-Use like this:
+3. Use like this:
 
 Instead of using `document.querySelector(query)`
 -> use `memoize.query(query)`
