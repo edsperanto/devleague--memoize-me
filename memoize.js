@@ -2,10 +2,6 @@ window.memoize = (function() {
 
 	var cache = {};
 
-	function sanity() {
-		console.log('sanity check');
-	}
-
 	function getTag(tag) {
 
 	}
@@ -15,7 +11,8 @@ window.memoize = (function() {
 	}
 
 	return {
-		sanity
+		tag: getTag,
+		id: getId
 	}
 
 })();
