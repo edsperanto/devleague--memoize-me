@@ -4,9 +4,7 @@
 
 2. Put this in your header:
 
-```
-<script type="text/javascript" src="/path/to/memoize.js"></script>
-```
+`<script type="text/javascript" src="/path/to/memoize.js"></script>`
 
 3. Use like this:
 
