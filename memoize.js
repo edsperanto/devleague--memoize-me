@@ -1,4 +1,4 @@
-window.memoize = (function() {
+window.memoize = (function(document) {
 
 	var cache = {
 		id: {},
@@ -30,4 +30,4 @@ window.memoize = (function() {
 		id: getId
 	}
 
-})();
+})(document);
